@@ -47,8 +47,8 @@ end
 local attempted = 1
 for _, e in pairs(list) do
     if attempted == #list then
-        newurl = "https://sammz.pythonanywhere.com/velocity/s/"..hwid.."/"..lplr.UserId)
-        local s = httprequest({Url = newurl, method = 'GET'}).Body
+        newurl = "https://sammz.pythonanywhere.com/velocity/s/"..hwid.."/"..lplr.UserId
+        s = httprequest({Url = newurl, method = 'GET'}).Body
         return
     else
         if e == hwid then
